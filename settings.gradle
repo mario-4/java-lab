@@ -1,0 +1,18 @@
+rootProject.name = 'java-lab'
+include ':multithreading'
+include ':java8-features'
+include ':java9'
+include ':java-nio'
+include ':java-agent'
+include ':java-jmx'
+include ':reactive'
+include ':java-collections'
+
+project(':multithreading').projectDir = "$rootDir/multithreading" as File
+project(':java8-features').projectDir = "$rootDir/java8features" as File
+project(':java9').projectDir = "$rootDir/java9" as File
+project(':java-nio').projectDir = "$rootDir/java-nio" as File
+project(':java-agent').projectDir = "$rootDir/java-agent" as File
+project(':java-jmx').projectDir = "$rootDir/java-jmx" as File
+project(':reactive').projectDir = "$rootDir/reactive" as File
+project(':java-collections').projectDir = "$rootDir/java-collections" as File

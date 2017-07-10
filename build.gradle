@@ -1,0 +1,24 @@
+allprojects {
+    group = 'appgenesislab.com'
+    version = '1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenLocal()
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+
+    dependencies {
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.16.14'
+        compile group: 'com.google.guava', name: 'guava', version: '15.0'
+        testCompile group: 'org.assertj', name: 'assertj-core', version: '3.6.2'
+        testCompile 'junit:junit:4.12'
+        testCompile group: 'com.jayway.awaitility', name: 'awaitility', version: '1.7.0'
+    }
+
+}
