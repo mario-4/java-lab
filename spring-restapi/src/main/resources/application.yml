@@ -1,0 +1,24 @@
+debug : true
+---
+spring:
+  dataSource:
+    driverClassName : org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/rest_crm
+    password :
+    username : sa
+  jpa:
+    database : H2
+    hibernate:
+      ddl-auto : none
+  application:
+    name: restapi
+security:
+  ignored: /**
+  basic:
+    enabled: false
+  user:
+    name: user
+    password: user
+server:
+  display-name: restapi
+
